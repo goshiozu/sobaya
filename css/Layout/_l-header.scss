@@ -1,0 +1,49 @@
+.header{
+    &__space{
+        height: 40px;
+        background-image: url("../image/bg_main-space.png");
+    }
+    .main{
+        display: flex;
+        min-height: 920px;
+        &__left{
+            text-align: center;
+            background-image: url("../image/bg_main.png");
+            flex-shrink: 0;/* flexでwitdhを自動調整するのを無くす */
+            width: 25%;
+            max-height: 920px;
+            .title{
+                position: relative;
+                .title-main{
+                    margin-top: 131px;
+                }
+                .title-sub{
+                    position: absolute;
+                    top:80px;
+                    margin-left: 4.7%;
+                }
+            }
+            >hr{
+                border-color: #272727;
+                opacity: 68%;
+                margin: 50px 10.4%;
+            }
+            &__info{
+                display: inline-block;
+                text-align: left;
+            }
+        }
+        &__right{
+            flex-shrink: 0;
+            width: 75%;
+            max-height: 920px;
+            overflow: hidden;
+            .img-main{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                vertical-align: top;
+            }
+        }
+    }
+}

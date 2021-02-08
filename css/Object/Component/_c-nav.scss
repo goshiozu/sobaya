@@ -1,0 +1,25 @@
+.nav{
+    background-image: url("../image/bg_menu.png");
+    color:white;
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 120px;
+        list-style: none;
+        li{
+            font-size: 30px;
+            >a{
+                color:white;
+                text-decoration:none;
+            }
+        }
+        span{
+            &::before{
+                content: url(../image/call.png);
+                margin-right: 36px;
+            }
+            font-size: 42px;
+        }
+    }
+}

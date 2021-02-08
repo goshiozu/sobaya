@@ -1,0 +1,12 @@
+.main-info {
+    font-size: 19px;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    &::before{
+        position: absolute;
+        font-family: FontAwesome;
+        content: "\f041";
+        left:-15px;
+    }
+}
