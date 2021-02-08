@@ -1,0 +1,32 @@
+.sec1{
+    background-image: url(../image/bg_discription1.png);
+    height: 805px;
+    position: relative;
+    &__contents{
+        width: 100%;
+        height: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 0;
+        &__discription{
+            display: flex;
+            flex-direction: column;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            >p{
+                margin-top: 106px;
+                margin-bottom: 150px;
+                line-height:30px;
+                font-size: 20px;
+            }
+            >h2{
+                margin-top: 111px;
+                font-size: 127px;
+            }
+        }
+
+    }
+}
