@@ -114,6 +114,13 @@ body {
   width: calc(100vw - 17px);
 }
 
+@media screen and (max-width: 1920px) {
+  body {
+    /* 暫定でPC版の場合1200pxの画面幅を持たせるように */
+    min-width: 1200px;
+  }
+}
+
 .header__space {
   height: 40px;
   background-image: url("../image/bg_main-space.png");
@@ -233,6 +240,7 @@ body {
   left: 0;
   z-index: 2;
   width: 100%;
+  max-width: 1920px;
 }
 
 .bg-filter {
@@ -240,6 +248,23 @@ body {
   height: 100%;
   background-color: black;
   opacity: 0.6;
+}
+
+.pagenavi-btn {
+  border: none;
+  width: 459px;
+  height: 89px;
+  background-color: #C1904F;
+  color: white;
+  font-size: 34px;
+  position: relative;
+}
+
+.pagenavi-btn::after {
+  content: ">";
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 5.7%;
 }
 
 .sec1 {
@@ -355,5 +380,49 @@ body {
 
 .sec2__contents .sec2__contetns__img {
   width: 50%;
+}
+
+.sec3 {
+  background-image: url(../image/bg_discription3.png);
+  height: 967px;
+  position: relative;
+}
+
+.sec3__contents {
+  position: absolute;
+  margin-top: 131px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pagenavi-content {
+  width: 23.9%;
+  color: #393939;
+}
+
+.pagenavi-content > h3 {
+  font-size: 34px;
+}
+
+.pagenavi-content > img {
+  width: 100%;
+  margin-top: 11px;
+}
+
+.pagenavi-content > p {
+  font-size: 20px;
+  margin-top: 13px;
+  margin-right: 20.3%;
+}
+
+.pagenavi-content .pagenavi-btn {
+  margin-top: 98px;
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

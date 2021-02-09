@@ -1,0 +1,15 @@
+.pagenavi-btn{
+    border: none;
+    width: 459px;
+    height: 89px;
+    background-color: #C1904F;
+    color: white;
+    font-size: 34px;
+    position: relative;
+    &::after{
+        content: ">";
+        position: absolute;
+        top: calc(50% - 20px);
+        right:5.7%;
+    }
+}

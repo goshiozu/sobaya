@@ -2,4 +2,8 @@ body{
     font-family: 'BodoniFLF-Bold';
     max-width: 1920px;
     width: calc(100vw - 17px);
+    @include mq(){
+        /* 暫定でPC版の場合1200pxの画面幅を持たせるように */
+        min-width: 1200px;
+    }
 }

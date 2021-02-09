@@ -82,3 +82,16 @@
 
     }
 }
+
+.sec3{
+    background-image: url(../image/bg_discription3.png);
+    height: 967px;
+    position: relative;
+    &__contents{
+        position: absolute;
+        margin-top: 131px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
