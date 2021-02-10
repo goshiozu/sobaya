@@ -113,17 +113,14 @@ input, select {
   src: url(../fonts/hiragino.ttc);
 }
 
-body {
+* {
   font-family: 'hiragino';
-  max-width: 1920px;
-  width: calc(100vw - 17px);
 }
 
-@media screen and (max-width: 1920px) {
-  body {
-    /* 暫定でPC版の場合1200pxの画面幅を持たせるように */
-    min-width: 1200px;
-  }
+body {
+  width: calc(100vw - 17px);
+  /* 暫定でPC版の場合1200pxの画面幅を持たせるように */
+  min-width: 1200px;
 }
 
 .header__space {
@@ -245,7 +242,6 @@ body {
   left: 0;
   z-index: 2;
   width: 100%;
-  max-width: 1920px;
 }
 
 .bg-filter {
@@ -268,12 +264,13 @@ body {
 .pagenavi-btn::after {
   content: ">";
   position: absolute;
-  top: calc(50% - 20px);
+  top: calc(50% - 27px);
   right: 5.7%;
 }
 
 .sec1 {
   background-image: url(../image/bg_discription1.png);
+  background-size: cover;
   height: 805px;
   position: relative;
 }
@@ -294,6 +291,8 @@ body {
   margin-left: 14.3%;
   -o-object-fit: contain;
      object-fit: contain;
+  position: relative;
+  top: -28px;
 }
 
 .sec1__contents__discription {
@@ -314,6 +313,7 @@ body {
   margin-top: 106px;
   margin-bottom: 150px;
   line-height: 30px;
+  letter-spacing: 10px;
   font-size: 20px;
 }
 
@@ -325,6 +325,7 @@ body {
 
 .sec2 {
   background-image: url(../image/bg_discription2.png);
+  background-size: cover;
   height: 1123px;
   position: relative;
 }
@@ -357,7 +358,7 @@ body {
 }
 
 .sec2__contents__discription > h2 {
-  margin-top: 233px;
+  margin-top: 159px;
   font-size: 48px;
   white-space: nowrap;
 }
@@ -380,15 +381,17 @@ body {
   margin-top: 106px;
   margin-bottom: 150px;
   line-height: 30px;
+  letter-spacing: 10px;
   font-size: 20px;
 }
 
 .sec2__contents .sec2__contetns__img {
-  width: 50%;
+  width: 52.8%;
 }
 
 .sec3 {
   background-image: url(../image/bg_discription3.png);
+  background-size: cover;
   height: 967px;
   position: relative;
 }
@@ -424,6 +427,7 @@ body {
   font-size: 20px;
   margin-top: 13px;
   margin-right: 20.3%;
+  line-height: 27px;
 }
 
 .pagenavi-content .pagenavi-btn {
