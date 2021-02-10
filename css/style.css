@@ -108,8 +108,13 @@ input, select {
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'hiragino';
+  src: url(../fonts/hiragino.ttc);
+}
+
 body {
-  font-family: 'BodoniFLF-Bold';
+  font-family: 'hiragino';
   max-width: 1920px;
   width: calc(100vw - 17px);
 }
