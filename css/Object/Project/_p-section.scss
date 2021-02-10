@@ -1,5 +1,6 @@
 .sec1{
     background-image: url(../image/bg_discription1.png);
+    background-size: cover;
     height: 805px;
     position: relative;
     &__contents{
@@ -13,6 +14,8 @@
             width:38.8%;
             margin-left: 14.3%;
             object-fit: contain;
+            position: relative;
+            top: -28px;
         }
         &__discription{
             display: flex;
@@ -24,6 +27,7 @@
                 margin-top: 106px;
                 margin-bottom: 150px;
                 line-height:30px;
+                letter-spacing: 10px;
                 font-size: 20px;
             }
             >h2{
@@ -38,6 +42,7 @@
 
 .sec2{
     background-image: url(../image/bg_discription2.png);
+    background-size: cover;
     height: 1123px;
     position: relative;
     &__contents{
@@ -54,7 +59,7 @@
             flex-direction: column;
             height: 100%;
             >h2{
-                margin-top: 233px;
+                margin-top: 159px;
                 font-size: 48px;
                 white-space: nowrap;
                 >strong{
@@ -73,11 +78,12 @@
                 margin-top: 106px;
                 margin-bottom: 150px;
                 line-height:30px;
+                letter-spacing: 10px;
                 font-size: 20px;
             }
         }
         .sec2__contetns__img{
-            width:50%;
+            width: 52.8%;
         }
 
     }
@@ -85,6 +91,7 @@
 
 .sec3{
     background-image: url(../image/bg_discription3.png);
+    background-size: cover;
     height: 967px;
     position: relative;
     &__contents{

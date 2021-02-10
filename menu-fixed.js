@@ -9,6 +9,10 @@ $(function() {
         navHeight = $nav.outerHeight(),
         navPos = $nav.offset().top,
         fixedClass = 'is-fixed';
+
+    $win.resize(function() {
+      navPos = $nav.offset().top
+    });
   
     $win.on('load scroll', function() {
       var value = $(this).scrollTop();
