@@ -118,7 +118,6 @@ input, select {
 }
 
 body {
-  width: calc(100vw - 17px);
   /* 暫定でPC版の場合1200pxの画面幅を持たせるように */
   min-width: 1200px;
 }
@@ -291,8 +290,8 @@ body {
   margin-left: 14.3%;
   -o-object-fit: contain;
      object-fit: contain;
-  position: relative;
-  top: -28px;
+  -o-object-position: 0 126px;
+     object-position: 0 126px;
 }
 
 .sec1__contents__discription {
@@ -337,24 +336,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   position: absolute;
   top: 0;
 }
 
 .sec2__contents__discription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
+  width: 630px;
+  margin-left: 7.6%;
 }
 
 .sec2__contents__discription > h2 {
@@ -368,10 +356,9 @@ body {
 }
 
 .sec2__contents__discription > h3 {
-  text-align: right;
   font-size: 43px;
-  position: relative;
-  left: 44px;
+  margin-left: 211px;
+  white-space: nowrap;
 }
 
 .sec2__contents__discription > p {
@@ -379,14 +366,21 @@ body {
   -webkit-writing-mode: vertical-rl;
           writing-mode: vertical-rl;
   margin-top: 106px;
-  margin-bottom: 150px;
+  margin-right: auto;
   line-height: 30px;
   letter-spacing: 10px;
   font-size: 20px;
+  height: 50%;
 }
 
 .sec2__contents .sec2__contetns__img {
   width: 52.8%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 0 155px;
+     object-position: 0 155px;
+  margin-left: 5.6%;
 }
 
 .sec3 {
