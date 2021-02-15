@@ -1,0 +1,28 @@
+.footer{
+    *{
+        color: white;
+    }
+    background-image: url(../image/bg_footer-space.png);
+    position: relative;
+    .footer-menu{
+        width: 34.7%;
+        height: 74px;
+        margin: 0 auto;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        >li{
+            font-size: 20px;
+            >a{
+                text-decoration: none;
+            }
+        }
+    }
+    >small{
+        position: absolute;
+        top: 30px;
+        right: 2.7%;
+        font-size: 16px;
+    }
+}

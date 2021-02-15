@@ -183,6 +183,45 @@ body {
   vertical-align: top;
 }
 
+.footer {
+  background-image: url(../image/bg_footer-space.png);
+  position: relative;
+}
+
+.footer * {
+  color: white;
+}
+
+.footer .footer-menu {
+  width: 34.7%;
+  height: 74px;
+  margin: 0 auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .footer-menu > li {
+  font-size: 20px;
+}
+
+.footer .footer-menu > li > a {
+  text-decoration: none;
+}
+
+.footer > small {
+  position: absolute;
+  top: 30px;
+  right: 2.7%;
+  font-size: 16px;
+}
+
 .main-info {
   font-size: 19px;
   display: inline-block;
@@ -413,7 +452,6 @@ body {
 }
 
 .pagenavi-content > img {
-  width: 100%;
   margin-top: 11px;
 }
 
