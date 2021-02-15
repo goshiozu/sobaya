@@ -2,10 +2,22 @@
     &__space{
         height: 40px;
         background-image: url("../image/bg_main-space.png");
+        @include mq(md){
+            height: 27px;
+        }
+        @include mq(sm){
+            height: 12px;
+        }
     }
     .main{
         display: flex;
         min-height: 920px;
+        @include mq(md){
+            min-height: 658px;
+        }
+        @include mq(sm){
+            min-height: 284px;
+        }
         &__left{
             text-align: center;
             background-image: url("../image/bg_main.png");
@@ -15,17 +27,36 @@
                 position: relative;
                 .title-main{
                     margin-top: 131px;
+                    @include mq(md){
+                        margin-top: 104px;
+                        width: 58px;
+                    }
+                    @include mq(sm){
+                        margin-top: 70px;
+                        width: 28px;
+                    }
                 }
                 .title-sub{
                     position: absolute;
                     top:80px;
                     margin-left: 4.7%;
+                    @include mq(md){
+                        top:53px;
+                        width: 23px;
+                    }
+                    @include mq(sm){
+                        top:56px;
+                        width: 11px;
+                    }
                 }
             }
             >hr{
                 border-color: #272727;
                 opacity: 68%;
                 margin: 50px 10.4%;
+                @include mq(sm){
+                    display: none;
+                }
             }
             &__info{
                 display: inline-block;

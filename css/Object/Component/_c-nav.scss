@@ -9,8 +9,20 @@
         list-style: none;
         margin-left: 15.2%;
         margin-right: 9.7%;
+        @include mq(md){
+            height: 60px;
+        }
+        @include mq(sm){
+            height: 33px;
+        }
         li{
             font-size: 30px;
+            @include mq(md){
+                font-size: 17px;
+            }
+            @include mq(sm){
+                font-size: 10px;
+            }
             >a{
                 color:white;
                 text-decoration:none;
@@ -20,8 +32,21 @@
             &::before{
                 content: url(../image/call.png);
                 margin-right: 36px;
+                @include mq(md){
+                    content: url(../image/call_ipad.png);
+                    margin-right: 17px;
+                }
+                @include mq(sm){
+                    display: none;
+                }
             }
             font-size: 42px;
+            @include mq(md){
+                font-size: 29px;
+            }
+            @include mq(sm){
+                display: none;
+            }
         }
     }
 }

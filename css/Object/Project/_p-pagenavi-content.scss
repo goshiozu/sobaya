@@ -1,20 +1,41 @@
 .pagenavi-content{
     width:23.9%;
     color: #393939;
+    max-width: 459px;
+    @include mq(md){
+        max-width: 484px;
+    }
+    @include mq(sm){
+        max-width: 484px;
+    }
     >h3{
         font-size: 34px;
+        width: 100%;
+        @include mq(md){
+            font-size: 32px;
+        }
     }
     >img{
         margin-top: 11px;
+        width: 100%;
     }
     >p{
         font-size: 20px;
         margin-top: 13px;
-        margin-right: 20.3%;
+        padding-right: 20.3%;
         line-height: 27px;
+        width: 100%;
+        @include mq(md){
+            padding-right: 31.8%;
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
     .pagenavi-btn{
         margin-top: 98px;
-        max-width: 100%;
+        width: 100%;
+        @include mq(md){
+            margin-top: 66.7px;
+        }
     }
 }

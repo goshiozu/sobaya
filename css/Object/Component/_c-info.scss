@@ -1,12 +1,29 @@
 .main-info {
-    font-size: 19px;
+    *{
+        font-size: 19px;
+        line-height: 26px;
+        @include mq(md){
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
     display: inline-block;
     text-align: left;
     position: relative;
+    @include mq(sm){
+        display: none;
+    }
     &::before{
         position: absolute;
         font-family: FontAwesome;
         content: "\f041";
-        left:-15px;
+        left:-20px;
+        font-size: 19px;
+        line-height: 26px;
+        @include mq(md){
+            left:-15px;
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 }

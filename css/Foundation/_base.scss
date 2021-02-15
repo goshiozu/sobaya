@@ -10,4 +10,7 @@
 body{
     /* 暫定でPC版の場合1200pxの画面幅を持たせるように */
     min-width: 1200px;
+    @include mq(md){
+        min-width: auto;
+    }
 }
