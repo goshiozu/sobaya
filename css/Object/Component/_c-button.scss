@@ -6,6 +6,9 @@
     color: white;
     font-size: 34px;
     position: relative;
+    @include mq(md){
+        font-size: 32px;
+    }
     &::after{
         content: ">";
         position: absolute;
