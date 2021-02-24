@@ -31,7 +31,7 @@ body {
 @include breakpoint(sp) {}
 
 .p-info {
-    width: 100vw;
+    width: calc(100vw-17px);
     background-image: url('../image/bg_info.png');
     background-size: cover;
     font-family: 'hiragino';

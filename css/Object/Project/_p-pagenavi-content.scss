@@ -9,7 +9,7 @@
         max-width: 484px;
     }
     >h3{
-        font-size: 34px;
+        @include fz_vw(34);
         width: 100%;
         @include mq(md){
             font-size: 32px;
@@ -20,7 +20,7 @@
         width: 100%;
     }
     >p{
-        font-size: 20px;
+        @include fz_vw(20);
         margin-top: 13px;
         padding-right: 20.3%;
         line-height: 27px;

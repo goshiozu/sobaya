@@ -16,7 +16,7 @@
             height: 33px;
         }
         li{
-            font-size: 30px;
+            @include fz_vw(30);
             @include mq(md){
                 font-size: 17px;
             }

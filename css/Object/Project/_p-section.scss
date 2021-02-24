@@ -51,7 +51,7 @@
                 margin-bottom: 150px;
                 line-height:30px;
                 letter-spacing: 10px;
-                font-size: 20px;
+                @include fz_vw(20);
                 @include mq(md){
                     font-size: 15px;
                     line-height:23px;
@@ -60,7 +60,7 @@
                     letter-spacing: 7px;
                 }
                 @include mq(sm){
-                    font-size: 8px;
+                    font-size: 10px;
                     line-height:14px;
                     margin-top: 36px;
                     margin-bottom: 26px;
@@ -70,7 +70,7 @@
             >h2{
                 margin-top: 111px;
                 margin-left:48px;
-                font-size: 127px;
+                @include fz_vw(127);
                 @include mq(md){
                     font-size: 68px;
                     margin-top: 97px;
@@ -103,7 +103,7 @@
             flex-direction: column-reverse;
         }
         &__discription{
-            width: 630px;
+            width: 40vw;
             margin-left: 7.6%;
             @include mq(md){
                 width: auto;
@@ -114,10 +114,10 @@
             }
             >h2{
                 margin-top: 159px;
-                font-size: 48px;
+                @include fz_vw(48);
                 white-space: nowrap;
                 >strong{
-                    font-size: 122px;
+                    @include fz_vw(122);
                 }
                 @include mq(md){
                     margin-top:0;
@@ -129,8 +129,8 @@
                 }
             }
             >h3{
-                font-size: 43px;
-                margin-left: 211px;
+                @include fz_vw(43);
+                margin-left: 13vw;
                 white-space: nowrap;
                 @include mq(md){
                     font-size: 19px;
@@ -144,22 +144,22 @@
                 writing-mode: vertical-rl;
                 margin-top: 106px;
                 margin-right: auto;
-                line-height:30px;
+                line-height: 30px;
                 letter-spacing: 10px;
-                font-size: 20px;
+                @include fz_vw(20);
                 height: 50%;
                 @include mq(md){
                     margin:0;
                     height: auto;
                     line-height:26px;
                     letter-spacing: 8px;
-                    font-size: 17px;
+                    font-size:17px;
                     height: 464px;
                 }
             }
         }
         .sec2__contetns__img{
-            width: 52.8%;
+            width: 45.8%;
             object-fit: contain;
             object-position: 0 155px;
             margin-left: 5.6%;
