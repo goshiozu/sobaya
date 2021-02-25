@@ -6,13 +6,13 @@
         max-width: 484px;
     }
     @include mq(sm){
-        max-width: 484px;
+        max-width: 207px;
     }
     >h3{
         @include fz_vw(34);
         width: 100%;
         @include mq(md){
-            font-size: 32px;
+            font-size: get_vw(32, 960);
         }
     }
     >img{
@@ -27,15 +27,12 @@
         width: 100%;
         @include mq(md){
             padding-right: 31.8%;
-            font-size: 18px;
-            line-height: 24px;
+            font-size: get_vw(18, 960);
+            line-height: 23px;
         }
     }
     .pagenavi-btn{
-        margin-top: 98px;
+        margin-top: 10%;
         width: 100%;
-        @include mq(md){
-            margin-top: 66.7px;
-        }
     }
 }

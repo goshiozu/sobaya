@@ -11,6 +11,8 @@
         margin-right: 9.7%;
         @include mq(md){
             height: 60px;
+            margin-left: 12%;
+            margin-right: 6%;
         }
         @include mq(sm){
             height: 33px;
@@ -18,7 +20,7 @@
         li{
             @include fz_vw(30);
             @include mq(md){
-                font-size: 17px;
+                font-size: get_vw(17, 960);
             }
             @include mq(sm){
                 font-size: 10px;

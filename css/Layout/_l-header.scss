@@ -11,6 +11,7 @@
     }
     .main{
         display: flex;
+        min-height: 805px;
         @include mq(md){
             min-height: 658px;
         }
