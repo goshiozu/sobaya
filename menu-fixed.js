@@ -11,6 +11,7 @@ $(function() {
         fixedClass = 'is-fixed';
 
     $win.resize(function() {
+      navHeight = $nav.outerHeight();
       navPos = $main.offset().top - navHeight;
       var value = $(this).scrollTop();
       if ( value > navPos ) {

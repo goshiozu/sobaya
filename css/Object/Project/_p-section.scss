@@ -28,8 +28,8 @@
                 width: 52.8%;
                 object-position: 0 123px;
             }
-            @include mq(md){
-                margin-left: 8.3%;
+            @include mq(sm){
+                margin-left: 6.3vw;
                 width: 50.4%;
                 object-position: 0 58px;
             }
@@ -43,25 +43,25 @@
             @include mq(md){
                 margin-left: 7.6%;
             }
-            @include mq(md){
-                margin-left: 8.8%;
+            @include mq(sm){
+                margin-left: 5.8vw;
             }
             >p{
                 margin-top: 106px;
                 margin-bottom: 150px;
                 line-height:30px;
                 letter-spacing: 10px;
-                font-size: 20px;
+                @include fz_vw(20);
                 @include mq(md){
-                    font-size: 15px;
+                    font-size: get_vw(15, 960);
                     line-height:23px;
                     margin-top: 84px;
                     margin-bottom: 83px;
                     letter-spacing: 7px;
                 }
                 @include mq(sm){
-                    font-size: 8px;
-                    line-height:14px;
+                    font-size: get_vw(10, 520);
+                    line-height: 3.5vw;
                     margin-top: 36px;
                     margin-bottom: 26px;
                     letter-spacing: 7px;
@@ -70,14 +70,14 @@
             >h2{
                 margin-top: 111px;
                 margin-left:48px;
-                font-size: 127px;
+                @include fz_vw(127);
                 @include mq(md){
-                    font-size: 68px;
+                    font-size: get_vw(68, 960);
                     margin-top: 97px;
                     margin-left:4.2%;
                 }
                 @include mq(sm){
-                    font-size: 30px;
+                    font-size: get_vw(30, 520);
                     margin-top: 48px;
                     margin-left:3.5%;
                 }
@@ -90,85 +90,102 @@
 .sec2{
     background-image: url(../image/bg_discription2.png);
     background-size: cover;
-    height: 1123px;
-    position: relative;
+    height: auto;
     &__contents{
         width: 100%;
         height: 100%;
         color: #393939;
         display: flex;
-        position: absolute;
         top: 0;
         @include mq(md){
             flex-direction: column-reverse;
+            height: auto;
         }
         &__discription{
-            width: 630px;
+            width: 100%;
             margin-left: 7.6%;
             @include mq(md){
                 width: auto;
-                margin:auto;
+                margin: 7.1% auto;
                 display: block;
                 -webkit-writing-mode: vertical-rl;
                 writing-mode: vertical-rl;
             }
+            @include mq(sm){
+                height: 215px;
+            }
             >h2{
                 margin-top: 159px;
-                font-size: 48px;
+                @include fz_vw(48);
                 white-space: nowrap;
                 >strong{
-                    font-size: 122px;
+                    @include fz_vw(122);
                 }
                 @include mq(md){
                     margin-top:0;
                     font-size: 23px;
+                    font-size: get_vw(23, 960);
                     letter-spacing: 10px;
                     >strong{
                         font-size: 75px;
+                        font-size: get_vw(75, 960);
                     }
                 }
             }
             >h3{
-                font-size: 43px;
-                margin-left: 211px;
+                @include fz_vw(43);
+                margin-left: 13vw;
                 white-space: nowrap;
                 @include mq(md){
                     font-size: 19px;
+                    font-size: get_vw(19, 960);
                     letter-spacing: 10px;
                     margin-left:6.7%;
                     margin-top: 140px;
+                }
+                @include mq(md){
+                    margin-top: 54px;
                 }
             }
             >p{
                 -ms-writing-mode: tb-rl;
                 writing-mode: vertical-rl;
-                margin-top: 106px;
+                margin: 106px auto 143px 0;
                 margin-right: auto;
-                line-height:30px;
+                line-height: 28px;
                 letter-spacing: 10px;
-                font-size: 20px;
-                height: 50%;
+                @include fz_vw(20);
+                height: 537px;
                 @include mq(md){
                     margin:0;
                     height: auto;
-                    line-height:26px;
-                    letter-spacing: 8px;
-                    font-size: 17px;
+                    letter-spacing: 3px;
+                    font-size: get_vw(17, 960);
                     height: 464px;
+                }
+                @include mq(sm){
+                    line-height:3.5vw;
+                    height: 215px;
                 }
             }
         }
         .sec2__contetns__img{
-            width: 52.8%;
+            width: 45.8%;
             object-fit: contain;
             object-position: 0 155px;
-            margin-left: 5.6%;
+            margin-right: 3%;
             @include mq(md){
                 width: 85.9%;
+                max-width: 720px;
                 object-position: 0;
                 height: auto;
                 display: block;
                 margin: 58px auto 0;
+            }
+            @include mq(sm){
+                width: 80.9%;
+                max-width: 335px;
+                margin: 31px auto 0;
             }
         }
 
@@ -177,29 +194,24 @@
 
 .sec3{
     background-image: url(../image/bg_discription3.png);
-    height: 967px;
-    @include mq(md){
-        height: 2147px;
-    }
-    position: relative;
     &__contents{
-        position: absolute;
-        margin-top: 131px;
+        padding: 131px 0 192px 0;
         display: flex;
         align-items: center;
         justify-content: space-around;
         @include mq(md){
-            margin-top:74.5px;
+            padding:74.5px 0;
+            display:block;
             .pagenavi-content{
-                width: 100%;
+                min-width: 62.8%;
                 margin: auto;
                 &:not(:first-of-type){
-                    margin-top: 54.9px;
+                    margin-top: 15%;
                 }
             }
         }
-        @include mq(md){
-            display:block;
+        @include mq(sm){
+            min-width: 55%;
         }
         width: 100%;
     }

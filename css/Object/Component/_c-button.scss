@@ -1,18 +1,18 @@
 .pagenavi-btn{
     border: none;
     width: 459px;
-    height: 89px;
+    padding: 5% 0;
     background-color: #C1904F;
     color: white;
-    font-size: 34px;
+    @include fz_vw(34);
     position: relative;
     @include mq(md){
-        font-size: 32px;
+        padding: 4% 0;
+        font-size: get_vw(32, 960);
     }
     &::after{
         content: ">";
         position: absolute;
-        top: calc(50% - 27px);
         right:5.7%;
     }
 }
