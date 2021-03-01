@@ -23,6 +23,8 @@
             margin-left: 14.3%;
             object-fit: contain;
             object-position: 0 126px;
+            font-family: 'object-fit: contain; object-position: 0 126px;'; /*IE対策*/
+            
             @include mq(md){
                 margin-left: 8.3%;
                 width: 52.8%;
@@ -40,6 +42,7 @@
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
             margin-left: 10.8%;
+            height: 100%;
             @include mq(md){
                 margin-left: 7.6%;
             }
@@ -172,6 +175,7 @@
         .sec2__contetns__img{
             width: 45.8%;
             object-fit: contain;
+            font-family: 'object-fit: contain;'; /*IE対策*/
             object-position: 0 155px;
             margin-right: 3%;
             @include mq(md){
