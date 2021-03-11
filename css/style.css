@@ -429,6 +429,8 @@ input, select {
   display: inline-block;
   text-align: left;
   position: relative;
+  width: 80%;
+  left: 5vw;
 }
 
 .main-info * {
@@ -442,6 +444,12 @@ input, select {
     font-size: 12px;
     font-size: clamp(12px, 1.25vw, 1.25vw);
     line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main-info {
+    left: 3vw;
   }
 }
 
@@ -525,36 +533,36 @@ input, select {
   text-decoration: none;
 }
 
-.nav__menu .tel {
+.nav__menu .nav-tel {
   font-size: 42px;
 }
 
-.nav__menu .tel::before {
+.nav__menu .nav-tel::before {
   content: url(../image/call.png);
   margin-right: 36px;
 }
 
 @media screen and (max-width: 960px) {
-  .nav__menu .tel::before {
+  .nav__menu .nav-tel::before {
     content: url(../image/call_ipad.png);
     margin-right: 10px;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .nav__menu .tel::before {
+  .nav__menu .nav-tel::before {
     display: none;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .nav__menu .tel {
+  .nav__menu .nav-tel {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .nav__menu .tel {
+  .nav__menu .nav-tel {
     display: none;
   }
 }
