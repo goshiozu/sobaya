@@ -20,7 +20,7 @@
         li{
             @include fz_vw(30);
             @include mq(md){
-                font-size: get_vw(17, 960);
+                @include fz_vw(17, 960);
             }
             @include mq(sm){
                 font-size: 10px;
@@ -30,13 +30,13 @@
                 text-decoration:none;
             }
         }
-        span{
+        .tel{
             &::before{
                 content: url(../image/call.png);
                 margin-right: 36px;
                 @include mq(md){
                     content: url(../image/call_ipad.png);
-                    margin-right: 17px;
+                    margin-right: 10px;
                 }
                 @include mq(sm){
                     display: none;
@@ -44,7 +44,7 @@
             }
             font-size: 42px;
             @include mq(md){
-                font-size: 29px;
+                font-size: 24px;
             }
             @include mq(sm){
                 display: none;

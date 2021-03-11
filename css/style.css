@@ -153,6 +153,12 @@ input, select {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .header .main {
+    min-height: 500px;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .header .main {
     min-height: 284px;
@@ -185,6 +191,13 @@ input, select {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .header .main__left .title .title-main {
+    margin-top: 80px;
+    width: 40px;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .header .main__left .title .title-main {
     margin-top: 70px;
@@ -203,6 +216,13 @@ input, select {
   .header .main__left .title .title-sub {
     top: 53px;
     width: 23px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header .main__left .title .title-sub {
+    top: 53px;
+    width: 15px;
   }
 }
 
@@ -256,6 +276,12 @@ input, select {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .header .main__right .img-main {
+    min-height: 500px;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .header .main__right .img-main {
     min-height: 284px;
@@ -273,7 +299,7 @@ input, select {
   right: 4.3%;
   bottom: 86px;
   font-size: 42px;
-  font-size: 2.1875vw;
+  font-size: clamp(12px, 2.1875vw, 2.1875vw);
 }
 
 .header .main__right .img-title > hr {
@@ -287,7 +313,8 @@ input, select {
 @media screen and (max-width: 960px) {
   .header .main__right .img-title > h2 {
     bottom: 66px;
-    font-size: 2.8125vw;
+    font-size: 27px;
+    font-size: clamp(12px, 2.8125vw, 2.8125vw);
   }
   .header .main__right .img-title > hr {
     bottom: 54.8px;
@@ -298,7 +325,8 @@ input, select {
 @media screen and (max-width: 520px) {
   .header .main__right .img-title > h2 {
     bottom: 34px;
-    font-size: 1.92308vw;
+    font-size: 10px;
+    font-size: clamp(12px, 1.92308vw, 1.92308vw);
   }
   .header .main__right .img-title > hr {
     bottom: 27.8px;
@@ -346,7 +374,7 @@ input, select {
 
 @media screen and (max-width: 960px) {
   .footer .footer-menu {
-    width: 37.5%;
+    width: 42.5%;
   }
 }
 
@@ -354,7 +382,7 @@ input, select {
   .footer .footer-menu {
     height: auto;
     padding: 12px 0 6px 0;
-    width: 51.2%;
+    width: 67%;
   }
 }
 
@@ -364,13 +392,7 @@ input, select {
 
 @media screen and (max-width: 960px) {
   .footer .footer-menu > li {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .footer .footer-menu > li {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
@@ -387,19 +409,17 @@ input, select {
 
 @media screen and (max-width: 960px) {
   .footer > small {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
     top: 20px;
-    font-size: 10px;
-    right: 0;
+    font-size: 13px;
+    right: -30px;
   }
 }
 
 @media screen and (max-width: 520px) {
   .footer > small {
     position: static;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
     display: block;
     text-align: center;
   }
@@ -413,13 +433,14 @@ input, select {
 
 .main-info * {
   font-size: 19px;
-  font-size: 0.98958vw;
+  font-size: clamp(12px, 0.98958vw, 0.98958vw);
   line-height: 26px;
 }
 
 @media screen and (max-width: 960px) {
   .main-info * {
-    font-size: 1.25vw;
+    font-size: 12px;
+    font-size: clamp(12px, 1.25vw, 1.25vw);
     line-height: 16px;
   }
 }
@@ -483,12 +504,13 @@ input, select {
 
 .nav__menu li {
   font-size: 30px;
-  font-size: 1.5625vw;
+  font-size: clamp(12px, 1.5625vw, 1.5625vw);
 }
 
 @media screen and (max-width: 960px) {
   .nav__menu li {
-    font-size: 1.77083vw;
+    font-size: 17px;
+    font-size: clamp(12px, 1.77083vw, 1.77083vw);
   }
 }
 
@@ -503,36 +525,36 @@ input, select {
   text-decoration: none;
 }
 
-.nav__menu span {
+.nav__menu .tel {
   font-size: 42px;
 }
 
-.nav__menu span::before {
+.nav__menu .tel::before {
   content: url(../image/call.png);
   margin-right: 36px;
 }
 
 @media screen and (max-width: 960px) {
-  .nav__menu span::before {
+  .nav__menu .tel::before {
     content: url(../image/call_ipad.png);
-    margin-right: 17px;
+    margin-right: 10px;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .nav__menu span::before {
+  .nav__menu .tel::before {
     display: none;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .nav__menu span {
-    font-size: 29px;
+  .nav__menu .tel {
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .nav__menu span {
+  .nav__menu .tel {
     display: none;
   }
 }
@@ -559,14 +581,15 @@ input, select {
   background-color: #C1904F;
   color: white;
   font-size: 34px;
-  font-size: 1.77083vw;
+  font-size: clamp(12px, 1.77083vw, 1.77083vw);
   position: relative;
 }
 
 @media screen and (max-width: 960px) {
   .pagenavi-btn {
     padding: 4% 0;
-    font-size: 3.33333vw;
+    font-size: 32px;
+    font-size: clamp(12px, 3.33333vw, 3.33333vw);
   }
 }
 
@@ -630,7 +653,7 @@ input, select {
 
 @media screen and (max-width: 520px) {
   .sec1__contents .sec1__contetns__img {
-    margin-left: 6.3vw;
+    margin-left: 3vw;
     width: 50.4%;
     -o-object-position: 0 58px;
        object-position: 0 58px;
@@ -660,7 +683,7 @@ input, select {
 
 @media screen and (max-width: 520px) {
   .sec1__contents__discription {
-    margin-left: 5.8vw;
+    margin-left: 3vw;
   }
 }
 
@@ -670,12 +693,13 @@ input, select {
   line-height: 30px;
   letter-spacing: 10px;
   font-size: 20px;
-  font-size: 1.04167vw;
+  font-size: clamp(12px, 1.04167vw, 1.04167vw);
 }
 
 @media screen and (max-width: 960px) {
   .sec1__contents__discription > p {
-    font-size: 1.5625vw;
+    font-size: 15px;
+    font-size: clamp(12px, 1.5625vw, 1.5625vw);
     line-height: 23px;
     margin-top: 84px;
     margin-bottom: 83px;
@@ -685,8 +709,9 @@ input, select {
 
 @media screen and (max-width: 520px) {
   .sec1__contents__discription > p {
-    font-size: 1.92308vw;
-    line-height: 3.5vw;
+    font-size: 10px;
+    font-size: clamp(12px, 1.92308vw, 1.92308vw);
+    line-height: 4vw;
     margin-top: 36px;
     margin-bottom: 26px;
     letter-spacing: 7px;
@@ -697,12 +722,13 @@ input, select {
   margin-top: 111px;
   margin-left: 48px;
   font-size: 127px;
-  font-size: 6.61458vw;
+  font-size: clamp(12px, 6.61458vw, 6.61458vw);
 }
 
 @media screen and (max-width: 960px) {
   .sec1__contents__discription > h2 {
-    font-size: 7.08333vw;
+    font-size: 68px;
+    font-size: clamp(12px, 7.08333vw, 7.08333vw);
     margin-top: 97px;
     margin-left: 4.2%;
   }
@@ -710,7 +736,8 @@ input, select {
 
 @media screen and (max-width: 520px) {
   .sec1__contents__discription > h2 {
-    font-size: 5.76923vw;
+    font-size: 30px;
+    font-size: clamp(12px, 5.76923vw, 5.76923vw);
     margin-top: 48px;
     margin-left: 3.5%;
   }
@@ -743,14 +770,14 @@ input, select {
 }
 
 .sec2__contents__discription {
-  width: 100%;
+  width: 40%;
   margin-left: 7.6%;
 }
 
 @media screen and (max-width: 960px) {
   .sec2__contents__discription {
     width: auto;
-    margin: 7.1% auto;
+    margin: 7.1% 15vw;
     display: block;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
@@ -760,6 +787,7 @@ input, select {
 
 @media screen and (max-width: 520px) {
   .sec2__contents__discription {
+    margin: 7.1% 3vw;
     height: 215px;
   }
 }
@@ -767,31 +795,33 @@ input, select {
 .sec2__contents__discription > h2 {
   margin-top: 159px;
   font-size: 48px;
-  font-size: 2.5vw;
+  font-size: clamp(12px, 2.5vw, 2.5vw);
   white-space: nowrap;
 }
 
 .sec2__contents__discription > h2 > strong {
   font-size: 122px;
-  font-size: 6.35417vw;
+  font-size: clamp(12px, 6.35417vw, 6.35417vw);
 }
 
 @media screen and (max-width: 960px) {
   .sec2__contents__discription > h2 {
     margin-top: 0;
     font-size: 23px;
-    font-size: 2.39583vw;
+    font-size: 23px;
+    font-size: clamp(12px, 2.39583vw, 2.39583vw);
     letter-spacing: 10px;
   }
   .sec2__contents__discription > h2 > strong {
     font-size: 75px;
-    font-size: 7.8125vw;
+    font-size: 75px;
+    font-size: clamp(12px, 7.8125vw, 7.8125vw);
   }
 }
 
 .sec2__contents__discription > h3 {
   font-size: 43px;
-  font-size: 2.23958vw;
+  font-size: clamp(12px, 2.23958vw, 2.23958vw);
   margin-left: 13vw;
   white-space: nowrap;
 }
@@ -799,15 +829,17 @@ input, select {
 @media screen and (max-width: 960px) {
   .sec2__contents__discription > h3 {
     font-size: 19px;
-    font-size: 1.97917vw;
+    font-size: 19px;
+    font-size: clamp(12px, 1.97917vw, 1.97917vw);
     letter-spacing: 10px;
-    margin-left: 6.7%;
+    margin-left: 10vw;
     margin-top: 140px;
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 520px) {
   .sec2__contents__discription > h3 {
+    margin-left: 4vw;
     margin-top: 54px;
   }
 }
@@ -816,12 +848,11 @@ input, select {
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
           writing-mode: vertical-rl;
-  margin: 106px auto 143px 0;
-  margin-right: auto;
+  margin: 106px 0 143px 3vw;
   line-height: 28px;
   letter-spacing: 10px;
   font-size: 20px;
-  font-size: 1.04167vw;
+  font-size: clamp(12px, 1.04167vw, 1.04167vw);
   height: 537px;
 }
 
@@ -830,14 +861,15 @@ input, select {
     margin: 0;
     height: auto;
     letter-spacing: 3px;
-    font-size: 1.77083vw;
+    font-size: 17px;
+    font-size: clamp(12px, 1.77083vw, 1.77083vw);
     height: 464px;
   }
 }
 
 @media screen and (max-width: 520px) {
   .sec2__contents__discription > p {
-    line-height: 3.5vw;
+    line-height: 4vw;
     height: 215px;
   }
 }
@@ -930,13 +962,14 @@ input, select {
 
 .pagenavi-content > h3 {
   font-size: 34px;
-  font-size: 1.77083vw;
+  font-size: clamp(12px, 1.77083vw, 1.77083vw);
   width: 100%;
 }
 
 @media screen and (max-width: 960px) {
   .pagenavi-content > h3 {
-    font-size: 3.33333vw;
+    font-size: 32px;
+    font-size: clamp(12px, 3.33333vw, 3.33333vw);
   }
 }
 
@@ -947,7 +980,7 @@ input, select {
 
 .pagenavi-content > p {
   font-size: 20px;
-  font-size: 1.04167vw;
+  font-size: clamp(12px, 1.04167vw, 1.04167vw);
   margin-top: 13px;
   padding-right: 20.3%;
   line-height: 27px;
@@ -956,9 +989,16 @@ input, select {
 
 @media screen and (max-width: 960px) {
   .pagenavi-content > p {
-    padding-right: 31.8%;
-    font-size: 1.875vw;
+    padding-right: 10.8%;
+    font-size: 18px;
+    font-size: clamp(12px, 1.875vw, 1.875vw);
     line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .pagenavi-content > p {
+    line-height: 20px;
   }
 }
 

@@ -31,7 +31,7 @@
                 object-position: 0 123px;
             }
             @include mq(sm){
-                margin-left: 6.3vw;
+                margin-left: 3vw;
                 width: 50.4%;
                 object-position: 0 58px;
             }
@@ -47,7 +47,7 @@
                 margin-left: 7.6%;
             }
             @include mq(sm){
-                margin-left: 5.8vw;
+                margin-left: 3vw;
             }
             >p{
                 margin-top: 106px;
@@ -56,15 +56,15 @@
                 letter-spacing: 10px;
                 @include fz_vw(20);
                 @include mq(md){
-                    font-size: get_vw(15, 960);
+                    @include fz_vw(15, 960);
                     line-height:23px;
                     margin-top: 84px;
                     margin-bottom: 83px;
                     letter-spacing: 7px;
                 }
                 @include mq(sm){
-                    font-size: get_vw(10, 520);
-                    line-height: 3.5vw;
+                    @include fz_vw(10, 520);
+                    line-height: 4vw;
                     margin-top: 36px;
                     margin-bottom: 26px;
                     letter-spacing: 7px;
@@ -75,12 +75,12 @@
                 margin-left:48px;
                 @include fz_vw(127);
                 @include mq(md){
-                    font-size: get_vw(68, 960);
+                    @include fz_vw(68, 960);
                     margin-top: 97px;
                     margin-left:4.2%;
                 }
                 @include mq(sm){
-                    font-size: get_vw(30, 520);
+                    @include fz_vw(30, 520);
                     margin-top: 48px;
                     margin-left:3.5%;
                 }
@@ -105,16 +105,17 @@
             height: auto;
         }
         &__discription{
-            width: 100%;
+            width: 40%;
             margin-left: 7.6%;
             @include mq(md){
                 width: auto;
-                margin: 7.1% auto;
+                margin: 7.1% 15vw;
                 display: block;
                 -webkit-writing-mode: vertical-rl;
                 writing-mode: vertical-rl;
             }
             @include mq(sm){
+                margin: 7.1% 3vw;
                 height: 215px;
             }
             >h2{
@@ -127,11 +128,11 @@
                 @include mq(md){
                     margin-top:0;
                     font-size: 23px;
-                    font-size: get_vw(23, 960);
+                    @include fz_vw(23, 960);
                     letter-spacing: 10px;
                     >strong{
                         font-size: 75px;
-                        font-size: get_vw(75, 960);
+                        @include fz_vw(75, 960);
                     }
                 }
             }
@@ -141,20 +142,20 @@
                 white-space: nowrap;
                 @include mq(md){
                     font-size: 19px;
-                    font-size: get_vw(19, 960);
+                    @include fz_vw(19, 960);
                     letter-spacing: 10px;
-                    margin-left:6.7%;
+                    margin-left:10vw;
                     margin-top: 140px;
                 }
-                @include mq(md){
+                @include mq(sm){
+                    margin-left:4vw;
                     margin-top: 54px;
                 }
             }
             >p{
                 -ms-writing-mode: tb-rl;
                 writing-mode: vertical-rl;
-                margin: 106px auto 143px 0;
-                margin-right: auto;
+                margin: 106px 0 143px 3vw;
                 line-height: 28px;
                 letter-spacing: 10px;
                 @include fz_vw(20);
@@ -163,11 +164,11 @@
                     margin:0;
                     height: auto;
                     letter-spacing: 3px;
-                    font-size: get_vw(17, 960);
+                    @include fz_vw(17, 960);
                     height: 464px;
                 }
                 @include mq(sm){
-                    line-height:3.5vw;
+                    line-height:4vw;
                     height: 215px;
                 }
             }

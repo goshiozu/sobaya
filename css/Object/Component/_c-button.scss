@@ -8,7 +8,7 @@
     position: relative;
     @include mq(md){
         padding: 4% 0;
-        font-size: get_vw(32, 960);
+        @include fz_vw(32, 960);
     }
     &::after{
         content: ">";

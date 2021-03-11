@@ -12,7 +12,7 @@
         @include fz_vw(34);
         width: 100%;
         @include mq(md){
-            font-size: get_vw(32, 960);
+            @include fz_vw(32, 960);
         }
     }
     >img{
@@ -26,9 +26,12 @@
         line-height: 27px;
         width: 100%;
         @include mq(md){
-            padding-right: 31.8%;
-            font-size: get_vw(18, 960);
+            padding-right: 10.8%;
+            @include fz_vw(18, 960);
             line-height: 23px;
+        }
+        @include mq(sm){
+            line-height: 20px;
         }
     }
     .pagenavi-btn{
